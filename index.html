@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelBliss</title>
-    <!------------------- HEADER --------------------->
+    <!------------------- LINKS --------------------->
+
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <!------------------- HEADER --------------------->
@@ -37,10 +41,24 @@
     <!------------------- MAIN --------------------->
     <main>
         <!------------------- HERO --------------------->
-        <section id="hero" class="hero section-padding">
+        <section id="hero" class="hero">
             <div class="container">
                 <article class="flex-center hero-container">
                     <div class="hero-text">
+                        <!-- single item -->
+                        <div class="item active">
+                            <h1 class="title">Tourism Opens Minds</h1>
+                            <p class="hero-desc">VisitSaudi has taken the pledge and committed to promoting tourism on a global level along with its partners.</p>
+                            <a href="#" class="btn btn-outline">Learn More</a>
+                        </div>
+                        <!-- end single item-->
+                        <!-- single item -->
+                        <div class="item">
+                            <h1 class="title">Tourism Opens Minds</h1>
+                            <p class="hero-desc">VisitSaudi has taken the pledge and committed to promoting tourism on a global level along with its partners.</p>
+                            <a href="#" class="btn btn-outline">Learn More</a>
+                        </div>
+                        <!-- end single item-->
                         <!-- single item -->
                         <div class="item">
                             <h1 class="title">Tourism Opens Minds</h1>
@@ -52,7 +70,7 @@
                     <div class="showcase">
                         <div class="hero-showcase">
                             <!-- single item -->
-                            <div class="showcase-img">
+                            <div class="showcase-img front">
                                 <img src="./Images/desktop-pledge.png" alt="showcase-img">
                             </div>
                             <!-- end single item -->
@@ -69,6 +87,44 @@
                         </div>
                     </div>
                 </article>
+                <div class="hero-btn-container flex-center">
+                    <a href="#" class="hero-btn ">Tourism Opens Minds</a>
+                    <a href="#" class="hero-btn">Saudi Stopover</a>
+                    <a href="#" class="hero-btn">Seek thrills like Lionel Messi</a>
+                </div>
+            </div>
+        </section>
+        <!------------------- SEE SAUDI --------------------->
+        <section id="see" class="see section-padding">
+            <div class="container">
+                <h2 class="section-title">See Saudi in a Variety of Ways</h2>
+                <!-- CARDS -->
+                <div class="cards flex-center">
+                    <!-- card -->
+                    <div class="card">
+                        <img src="Images/beauty-albalad-desktop.jpg" alt="Card image" class="card-image">
+                        <div class="card-overlay">
+                          <h3 class="card-title">Culture and Heritage</h3>
+                          <a href="#" class="card-button btn">Explore <i class="fa-solid fa-chevron-right btn-icon"></i></a>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="card">
+                        <img src="Images/dammam-qarah-mountains.jpg" alt="Card image" class="card-image">
+                        <div class="card-overlay">
+                            <h3 class="card-title">Nature and Adventure</h3>
+                            <a href="#" class="card-button btn">Explore <i class="fa-solid fa-chevron-right btn-icon"></i></a>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="card">
+                        <img src="Images/desktop-sun-and-sea.jpg" alt="Card image" class="card-image">
+                        <div class="card-overlay">
+                            <h3 class="card-title">Sun and Sea</h3>
+                            <a href="#" class="card-button btn">Explore <i class="fa-solid fa-chevron-right btn-icon"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

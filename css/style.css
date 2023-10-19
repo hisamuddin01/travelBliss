@@ -37,15 +37,39 @@ a {
     align-items: center;
     justify-content: space-between;
 }
+/*======================= BUTTONS ============================*/
 .btn {
-    display: inline-block;
-    color: #FFF;
+    color: #057d8b;
     font-size: 0.9rem;
+    font-weight: 600;
     text-transform: capitalize;
+    background-color: rgb(243, 241, 241);
+    padding: 0.8em 2.3em;
+    border-radius: 2.5em;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.btn-outline {
+    color: #FFF;
+    background-color: transparent;
+    border: 1px solid currentColor;
+}
+.btn-outline:hover {
     background-color: #057d8b;
-    padding: 0.7em 2.3em;
-    border-radius: 1.5em;
-    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+    border-color: #057d8b;
+}
+.card-button {
+    color: #FFF;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-top: 1rem;
+}
+.btn-icon {
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+.card-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 /*======================= HEADER ============================*/
 .header {
@@ -237,8 +261,14 @@ a {
 .hero {
     background-color: #333;
 }
+.hero-container {
+    padding: 5rem 0;
+}
 .hero-text {
     width: 40%;
+}
+.item {
+    display: none;
 }
 .title {
     color: #FFF;
@@ -293,4 +323,69 @@ a {
     right: 0;
     top: 37.5px;
     z-index: 777;
+}
+.active {
+    display: block;
+}
+.hero-btn-container {
+    display: flex;
+    border-top: 1px solid #7f7e7e;
+    gap: 4rem;
+}
+.hero-btn {
+    color: #9b9999;
+    font-size: 1.1rem;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid transparent;
+    transition: all 300ms ease;
+}
+.hero-btn-active {
+    color: #FFF;
+    border-top: 1px solid currentColor;
+}
+.hero-btn:hover {
+    color: #FFF;
+    border-top: 1px solid currentColor;
+}
+
+/*========== SEE SAUDI =========*/
+.section-title {
+    color: #333;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.cards {
+    gap: 2.5rem;
+}
+.card {
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.card-image {
+    height: 100%;
+    object-fit: cover;
+}
+.card-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 2rem;
+}
+.card-title {
+    color: #FFF;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
